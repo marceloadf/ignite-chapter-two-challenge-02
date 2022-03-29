@@ -1,6 +1,8 @@
-export interface Food {
-    image: string;
+export interface FoodInterface {
+    id: number;
     name: string;
-    price: string;
     description: string;
+    price: string;
+    available: boolean;
+    image: string;
 }
