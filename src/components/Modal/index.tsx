@@ -7,7 +7,7 @@ interface ReactModalProps {
   setIsOpen: () => void;
 }
 
-function Modal({children, isOpen, setIsOpen}: ReactModalProps) {
+export function Modal({children, isOpen, setIsOpen}: ReactModalProps) {
     return (
       <ReactModal
         shouldCloseOnOverlayClick={!false}
@@ -38,5 +38,3 @@ function Modal({children, isOpen, setIsOpen}: ReactModalProps) {
     );
   // }
 };
-
-export default Modal;

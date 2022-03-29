@@ -2,8 +2,8 @@ import { useRef } from 'react';
 import { FiCheckSquare } from 'react-icons/fi';
 
 import { Form } from './styles';
-import Modal from '../Modal';
-import Input from '../Input';
+import { Modal } from '../Modal';
+import { Input } from '../Input';
 
 interface ModalEditFoddProps {
   isOpen: boolean;
@@ -11,7 +11,7 @@ interface ModalEditFoddProps {
   handleAddFood: (data: any) => void;
 };
 
-function ModalAddFood({isOpen, setIsOpen, handleAddFood}: ModalEditFoddProps) {
+export function ModalAddFood({isOpen, setIsOpen, handleAddFood}: ModalEditFoddProps) {
 
   const formRef = useRef(null);
 
@@ -40,6 +40,3 @@ function ModalAddFood({isOpen, setIsOpen, handleAddFood}: ModalEditFoddProps) {
     </Modal>
   );
 };
-
-
-export default ModalAddFood;
